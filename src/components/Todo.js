@@ -53,7 +53,7 @@ const Todo = () => {
   };
 
   const deleteTodo = (id) => {
-    fetch(`https://flask-todo3.onrender.com/${id}`, {
+    fetch(`https://flask-todo3.onrender.com/todo/${id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())
@@ -62,7 +62,7 @@ const Todo = () => {
   };
 
   const updateTodo = (id, updatedTask) => {
-    fetch(`https://flask-todo3.onrender.com/${id}`, {
+    fetch(`https://flask-todo3.onrender.com/todo/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -80,7 +80,7 @@ const Todo = () => {
   };
 
   const completeTodo = (id) => {
-    fetch(`https://flask-todo3.onrender.com/${id}/complete`, {
+    fetch(`https://flask-todo3.onrender.com/todo/${id}/complete`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json", // ensure you have this line
@@ -101,7 +101,7 @@ const Todo = () => {
   };
 
   const deleteCompletedTodo = (id) => {
-    fetch(`https://flask-todo3.onrender.com/${id}`, {
+    fetch(`https://flask-todo3.onrender.com/todo/${id}`, {
       method: "DELETE",
     })
       .then((response) => {
