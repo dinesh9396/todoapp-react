@@ -1,0 +1,99 @@
+
+
+.todolist ul {
+  
+  list-style-type: none;
+  padding: 0;
+}
+
+.todolist ul li {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  /* background: #ffffff; */
+  background: rgba(255, 255, 255, 0.5); 
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  
+}
+
+.todolist ul li i{
+  margin-top: 4px;
+  margin-right: 8px;
+}
+
+.task_list{
+  margin-left: 0%;
+}
+
+
+.todolist ul li span {
+  flex: 1;
+}
+
+/* .todolist ul li button {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+} */
+
+/* .todolist ul li button:hover {
+  background: #0056b3;
+} */
+
+.delete_button{
+  background: #ef4e4e;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* .delete_button i{
+  justify-content: space-between;
+} */
+
+.delete_button:hover{
+  background: #d40000;
+}
+
+.edit_button{
+  background: #ebeb5e;
+  color: rgb(14, 14, 14);
+  padding: 5px 10px;
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.complete_button{
+  background: #007bff;
+  color: rgb(251, 250, 250);
+  padding: 5px 10px;
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit_button:hover{
+  background: #fcfc03;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d4edda; /* Greenish color for completed tasks */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
